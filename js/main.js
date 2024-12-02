@@ -863,6 +863,16 @@ $(document).ready(function () {
       multiple: true,
     });
   }
+
+  if ($(".category-section--video").length > 0) {
+    if ($(window).width() < 1023) {
+      $(".category-section--video .swiper-slide a").map(function () {
+        let mobileHref = $(this).attr("data-mobile-href");
+
+        $(this).attr("href", mobileHref);
+      });
+    }
+  }
 });
 
 function moveTitle(name) {
