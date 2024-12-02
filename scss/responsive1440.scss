@@ -1,0 +1,152 @@
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1640px;
+  }
+
+  .grettings__item {
+    height: 680px;
+  }
+
+  .grettings {
+    &__content {
+      @include transform(translateY(50px));
+    }
+  }
+
+  .video {
+    height: 680px;
+  }
+
+  .text-section__picture {
+    max-width: 929px;
+    height: 632px;
+  }
+
+  .text-section__content {
+    max-width: 655px;
+  }
+
+  .subscribe-section__controls .input-item {
+    max-width: 243px;
+  }
+
+  .subscribed-news {
+    max-width: 380px;
+  }
+
+  .footer__inner {
+    gap: 18px 30px;
+  }
+
+  .social-list a {
+    gap: 0px;
+    height: 48px;
+    padding: 0 16px;
+  }
+
+  .footer__bottom {
+    gap: 144px;
+    padding-right: 136px;
+
+    p {
+      max-width: 310px;
+    }
+  }
+
+  .product-info__picture {
+    width: calc(100% - 687px);
+  }
+
+  .product-info__content {
+    max-width: 655px;
+  }
+
+  .product-info__details ul {
+    grid-template-columns: minmax(auto, 239px) 1fr;
+    gap: 22px 32px;
+    margin-bottom: 21px;
+  }
+
+  .product-info__item {
+    position: relative;
+    @include invisLink;
+
+    .picture {
+      &.small {
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .about-brand__picture {
+    width: 380px;
+    height: 380px;
+
+    img {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .about-brand__content {
+    width: calc(100% - 380px - 32px);
+  }
+
+  .about-brand__item {
+    align-items: center;
+  }
+
+  .catalog {
+    &__inner {
+      grid-template-columns: 380px 1fr;
+    }
+  }
+
+  .catalog-list .product-card .product-card__picture {
+    height: 291px;
+  }
+
+  .catalog-pagination .btn {
+    flex-grow: 4;
+    max-width: 100%;
+  }
+
+  .catalog-pagination .pagination {
+    flex-grow: 0.5;
+  }
+
+  .slider-main .swiper-slide {
+    height: 507px;
+  }
+
+  .cat-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+
+    .cat-item__media {
+      height: 507px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-info__item {
+    position: relative;
+    @include invisLink;
+
+    .picture {
+      &.small {
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

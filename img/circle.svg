@@ -1,0 +1,59 @@
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="50 50 160 160" width="160" height="160">
+
+	<defs>
+		<filter id="dropshadow" height="200%">
+			  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+			  <feOffset dx="2" dy="2" result="offsetblur"/>
+			  <feComponentTransfer>
+					<feFuncA type="linear" slope="0.4"/>
+			  </feComponentTransfer>
+			  <feMerge> 
+				<feMergeNode/>
+					<feMergeNode in="SourceGraphic"/> 
+			  </feMerge>
+		</filter>
+	</defs>
+
+
+	<path class="figure figure-1 --shadow" d="M 130.07 190 H 130 A 60.1 60.1 0 0 1 70 130.11 A 8 8 0 0 1 78 122.11 H 78 A 8 8 0 0 1 86 130.11 A 44.06 44.06 0 0 0 130 174 A 8 8 0 0 1 130.07 190 Z M 182 138 A 8 8 0 0 1 174 130 A 44.05 44.05 0 0 0 130 86 H 129.87 A 8 8 0 0 1 129.87 70 V 78 L 129.87 70 A 60.09 60.09 0 0 1 190 130 A 8 8 0 0 1 182 138 Z">
+		<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+	</path>
+	
+	<path class="figure figure-2 --shadow" d="M 131.042 167 H 131 A 36.06 36.06 90 0 1 95 131.066 A 4.8 4.8 90 0 1 99.8 126.266 H 99.8 A 4.8 4.8 90 0 1 104.6 131.066 A 26.436 26.436 90 0 0 131 157.4 A 4.8 4.8 90 0 1 131.042 167 Z M 162.2 135.8 A 4.8 4.8 90 0 1 157.4 131 A 26.43 26.43 90 0 0 131 104.6 H 130.922 A 4.8 4.8 90 0 1 130.922 95 V 99.8 L 130.922 95 A 36.054 36.054 90 0 1 167 131 A 4.8 4.8 90 0 1 162.2 135.8 Z">
+		<animateTransform attributeName="transform" type="rotate" dur="2s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+	</path>
+	
+	
+
+	<path class="figure figure-1 --origin" d="M 130.07 190 H 130 A 60.1 60.1 0 0 1 70 130.11 A 8 8 0 0 1 78 122.11 H 78 A 8 8 0 0 1 86 130.11 A 44.06 44.06 0 0 0 130 174 A 8 8 0 0 1 130.07 190 Z M 182 138 A 8 8 0 0 1 174 130 A 44.05 44.05 0 0 0 130 86 H 129.87 A 8 8 0 0 1 129.87 70 V 78 L 129.87 70 A 60.09 60.09 0 0 1 190 130 A 8 8 0 0 1 182 138 Z">
+		<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+	</path>
+	
+	<path class="figure figure-2 --origin" d="M 131.042 167 H 131 A 36.06 36.06 90 0 1 95 131.066 A 4.8 4.8 90 0 1 99.8 126.266 H 99.8 A 4.8 4.8 90 0 1 104.6 131.066 A 26.436 26.436 90 0 0 131 157.4 A 4.8 4.8 90 0 1 131.042 167 Z M 162.2 135.8 A 4.8 4.8 90 0 1 157.4 131 A 26.43 26.43 90 0 0 131 104.6 H 130.922 A 4.8 4.8 90 0 1 130.922 95 V 99.8 L 130.922 95 A 36.054 36.054 90 0 1 167 131 A 4.8 4.8 90 0 1 162.2 135.8 Z">
+		<animateTransform attributeName="transform" type="rotate" dur="2s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+	</path>
+
+
+
+    <style>
+		.figure-1 {
+			fill: #e5097f;
+			transform-origin: center center;
+		}
+
+		.figure-2 {
+			fill: #0b80b1;
+			transform-origin: center center;
+		}
+		
+		.figure {
+			opacity: 0.4;
+		}
+		
+		.figure.--shadow {
+			fill: #000000;
+			filter: url(#dropshadow);
+			transform-origin: center center;
+		}
+    </style>
+</svg>

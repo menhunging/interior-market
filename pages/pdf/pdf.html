@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        *,
+        ::after,
+        ::before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: "DejaVu Sans", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-weight: 400;
+            color: #000;
+        }
+
+        a,
+        span,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            padding: 10px 20px;
+            background-color: #000;
+            border-radius: 16px;
+            display: table;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .logo img {
+            width: 300px;
+        }
+
+        .logo {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .work p+p {
+            margin-top: 3px;
+        }
+
+        .work {
+            color: #fff;
+            font-size: 11px;
+            line-height: 14px;
+            width: 200px;
+            text-align: right;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .adress {
+            color: #fff;
+            font-size: 11px;
+            line-height: 14px;
+            width: 200px;
+            text-align: left;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        table {
+            display: table;
+            width: 100%;
+            font-size: 10px;
+            background-color: #fff;
+            border-radius: 16px;
+            border-collapse: collapse;
+            overflow: hidden;
+            font-family: "DejaVu Sans", sans-serif;
+        }
+
+        thead {
+            background-color: #000;
+            color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        thead th {
+            padding: 10px 20px;
+        }
+
+        table td .title {
+            font-weight: bold;
+        }
+
+        table td {
+            text-align: center;
+            font-size: 11px;
+            padding: 10px 0;
+            font-family: "DejaVu Sans", sans-serif;
+        }
+
+        table tr:nth-child(2n+1) {
+            border-top: solid 1px rgba(0, 0, 0, 0.33)
+        }
+
+        table tr:nth-child(1) {
+            border-top: 0;
+        }
+
+        table img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .footer {
+            padding: 20px 15px;
+            display: table;
+            width: 100%;
+            font-weight: 400;
+            border-top: solid 1px rgba(0, 0, 0, 0.33)
+        }
+
+        .footer__tr {
+            display: table-row;
+        }
+
+        .footer .text {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+        }
+
+        .footer .text {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .footer .text .title+.title {
+            font-weight: bold;
+        }
+
+        .footer .phone img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 10px;
+            height: 12px;
+        }
+
+
+        .footer .mail img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 16px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .footer .name {
+            font-weight: bold;
+        }
+
+        .footer .info {
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footer a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: #4f4f4f;
+        }
+
+        .result .price {
+            font-size: 16px;
+        }
+
+        .result .text {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .result .text+.text .price {
+            color: #dd0017;
+            font-size: 20px;
+        }
+
+        .result {
+            text-align: right;
+            padding: 15px;
+            font-size: 14px;
+            border-top: solid 1px rgba(0, 0, 0, 0.33)
+        }
+
+        .full {
+            text-align: left;
+        }
+
+        .size {
+            white-space: nowrap;
+        }
+
+        .price.finish {
+            color: #dd0017;
+        }
+
+        .price {
+            white-space: nowrap;
+            font-weight: bold;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="adress">
+            <p>г. Москва, Ростовская набережная, дом 1</p>
+        </div>
+        <div class="logo">
+            <img src="./local/markup/img/logo4.svg" alt="logo" />
+        </div>
+        <div class="work">
+            <p>Пн-Пт: 11:00-21:00</p>
+            <p>Сб: 11:00-20:00</p>
+            <p>Вс: 11:00-19:00</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <h2 class="title">Подборка 1</h2>
+
+            <table>
+                <thead>
+                    <th>№</th>
+                    <th>Фабрика</th>
+                    <th>Изображение</th>
+                    <th>Модель</th>
+                    <th>Наименование</th>
+                    <th>Размер</th>
+                    <th>Кол-во, шт</th>
+                    <th>Цена</th>
+                    <th>Скидка, %</th>
+                    <th>Цена <br /> со скидкой</th>
+                    <th>Сумма <br /> со скидкой</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11</td>
+                        <td>Devon& Devon</td>
+                        <td>
+                            <img src="https://interior-market.ru/local/markup/img/pic-text1.webp" alt="" />
+                        </td>
+                        <td>CORIANDOLO A 1694</td>
+                        <td>Диван</td>
+                        <td class="size">36.3*66.3* 39.5</td>
+                        <td>1</td>
+                        <td class="price">13 154 622</td>
+                        <td>10</td>
+                        <td class="price">11 250 000</td>
+                        <td class="price finish">22 500 000</td>
+                    </tr>
+                    <tr>
+                        <td class="full" colspan="12">
+                            <span class="title">Отделка:</span>
+                            <span>Диван и подушки 65*65 (*2)-connor 701, подушки 55*55 (*2) -clay799, ножки glossy
+                                black
+                                nickel</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>Devon& Devon</td>
+                        <td>
+                            <img src="https://interior-market.ru/local/markup/img/pic-text1.webp" alt="">
+                        </td>
+                        <td>CORIANDOLO A 1694</td>
+                        <td>Диван</td>
+                        <td class="size">36.3*66.3* 39.5</td>
+                        <td>1</td>
+                        <td class="price">13 154 622</td>
+                        <td>10</td>
+                        <td class="price">11 250 000</td>
+                        <td class="price finish">22 500 000</td>
+                    </tr>
+                    <tr>
+                        <td class="full" colspan="12">
+                            <span class="title">Отделка:</span>
+                            <span>Диван и подушки 65*65 (*2)-connor 701, подушки 55*55 (*2) -clay799, ножки glossy
+                                black
+                                nickel</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="result">
+            <p class="text">Сумма всего: <span class="price">300 256 000</span></p>
+            <p class="text">Сумма всего со скидкой: <span class="price">280 256 000</span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__tr">
+            <div class="text">
+                <span class="title">Ваш менеджер:</span>
+                <span class="title">Иван Петров</span>
+            </div>
+        </div>
+        <div class="footer__tr">
+            <div class="text">
+                <a class="phone" href="tel:+74952662533">
+                    <img src="./local/markup/img/icon-phone.svg" alt="" />
+                    <span class="info">+7 (495) 266-25-33</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer__tr">
+            <div class="text">
+                <a class="mail" href="mailto:info@interior-market.ru">
+                    <img src="./local/markup/img/icon-mail.svg" alt="" />
+                    <span class="info">info@interior-market.ru</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

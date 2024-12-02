@@ -1,0 +1,136 @@
+.btn {
+  -webkit-appearance: none;
+  @include border-radius(0);
+  position: relative;
+  @include transition(all 0.3s);
+  @include border-radius(16px);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $colorBlack;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid transparent;
+  display: inline-block;
+
+  &.btn-white {
+    background-color: $colorWhite;
+    border-color: $colorBlack;
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+    }
+  }
+
+  &.btn-black {
+    background-color: $colorBlack;
+    border-color: $colorBlack;
+    color: $colorWhite;
+    @include border-radius(24px);
+
+    &:hover {
+      background-color: transparent;
+      color: $colorBlack;
+    }
+  }
+
+  svg {
+    path {
+      fill: $colorBlack;
+      @include transition(fill 0.3s);
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $colorWhite;
+      }
+    }
+  }
+}
+
+.btn-basket {
+  position: relative;
+
+  &__count {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorWhite;
+    width: 24px;
+    height: 17px;
+    position: absolute;
+    right: -15px;
+    bottom: -1px;
+    @include border-radius(56px);
+    background-color: #bb0909;
+  }
+}
+
+.btn-share {
+  @include border-radius(50%!important);
+  width: 48px;
+  height: 48px;
+}
+
+.btn-cabinet {
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.48);
+  color: rgba(0, 0, 0, 0.48);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  transition: all 0.3s;
+
+  svg {
+    transition: all 0.3s;
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    border-color: rgba(0, 0, 0, 1);
+
+    svg {
+      path {
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+.btn-load {
+  border: solid 1px $colorBlack;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    fill: $colorBlack;
+  }
+
+  &:hover {
+    background-color: $colorBlack;
+  }
+}

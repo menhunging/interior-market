@@ -1,0 +1,18 @@
+.caption {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $colorBlack;
+  width: 100%;
+  text-decoration-skip-ink: none;
+}
+
+.caption a,
+a.caption {
+  @include text-decoration-hover($colorBlack);
+}
+
+.caption--small {
+  font-size: 32px;
+}
