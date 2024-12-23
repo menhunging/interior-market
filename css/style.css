@@ -9954,6 +9954,13 @@ video.video-vertical {
   .product-info__name {
     max-width: 85%;
   }
+  .fancybox__slide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fancybox__content {
+    width: 100%;
+  }
 }
 @media (max-width: 639px) {
   .header-controls__button {
