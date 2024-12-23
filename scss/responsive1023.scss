@@ -917,15 +917,23 @@
   }
 
   .grettings-custom {
-    height: 680px;
+    height: 100%;
 
     &__content {
       width: 100%;
+      height: 50%;
       text-align: center;
       justify-content: center;
       align-items: center;
-      padding-bottom: 180px;
+      padding-bottom: 0;
       gap: 10px;
+      background-color: rgba(225, 192, 186, 1);
+    }
+
+    .image {
+      top:50%;
+      width: 100%;
+      height: 50%;
     }
 
     .caption {
@@ -941,6 +949,12 @@
 
     .btn {
       transform: translateY(10px);
+    }
+
+    .logo-mobile {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
     }
   }
 }
@@ -1449,5 +1463,14 @@
 
   .product-info__name {
     max-width: 85%;
+  }
+
+  .fancybox__slide{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .fancybox__content{
+    width: 100%;
   }
 }

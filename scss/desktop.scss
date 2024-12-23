@@ -896,6 +896,8 @@
     line-height: 24px;
     color: rgba(0, 0, 0, 0.64);
     transition: opacity 0.3s;
+    position: relative;
+    z-index: 3;
 
     &:last-child {
       opacity: 0;
@@ -6529,5 +6531,9 @@ video.video-vertical {
   .btn{
     margin-top: 0;
     transform: translateY(160px);
+  }
+
+  .logo-mobile{
+    display: none;
   }
 }
